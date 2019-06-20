@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no">
+            <title>新規登録</title>
+                <style>
+                    body{
+                        background-color: WHITE;
+                    }
+                    .main-nav{
+                        display: flex;
+                        list-style: none; 
+                        font-size: 13px;
+                        border-bottom: solid 1px rgb(117, 116, 116);
+                    }
+                    .main-nav li:first-child{
+                        margin-right: auto;
+                    }
+                    .logo{
+                        position: relative;
+                        left: -40px;
+                    }
+                    li {
+                        margin: 1px;
+                        padding: 10px;
+                        border-radius: 5px;
+                    }
+                    .Registration{
+                        border: solid 1px #000;
+                        border-radius: 10px;
+                        
+                        margin: 40px;
+                        width: auto;
+                        font-size: 14px;
+                        /*text-align: center;*/
+                    }
+                    .user{
+                        position: relative;
+                        display: block;
+                        margin: auto;
+                        padding: 8px;
+                        border: none;
+                        border-radius: 5px;      
+                    }
+                    .terms{
+                        height:200px;
+                        width: 99%;
+                        margin: auto;
+                        background: rgb(255, 255, 255);
+                        overflow-y: auto;
+                        border: solid 1px #000;
+                        word-wrap: break-word;    
+                    }
+                    .label{
+                        position: relative;
+                        left: 10px;
+                    }
+                    .btn1{
+                    	border-style : solid;
+                    	display: inline-block;
+                        background: #39cbaa;/*ボタン色*/
+                        color: #555;
+                        margin:0 auto;
+                        font-weight:bold;
+                        display: inline-block;
+  						padding: 0.5em 1em;
+  						text-decoration: none;
+  						border-bottom: solid 2px #627295;
+  						border-radius: 1.5px;
+  						
+                    }
+                    .textlines {
+                    	resize: none;
+						border: 1px solid;
+    					border-radius: 0.67em;
+    					background-color: WHITE;
+    					width: 100%;
+    					line-height: 0.5;
+    					height: 2.5em;
+    					font-size: 14px;
+    				}
+    				.paddings{
+    					padding: 15px;
+    				}
+    				.Regist-padding{
+    					padding: 5px;
+    				}                        
+                </style>
+    </head>
+
+    <body>
+        <nav>
+            <ul class="main-nav">
+                <li><a class ="logo">IRスマートリモコン</a></li>
+                <li><a href ="#">新規登録</a></li>
+                <li><a href ="#">ログイン</a></li> 
+            </ul>
+        </nav>
+        <div class="Registration">
+        <div class="Regist-padding">
+            <a>新規登録</a>
+            </div>
+            <hr color="black" size="1"></hr>
+            <br>
+            <div class ="paddings">
+            <a>ユーザー名</a>
+    			<input class="textlines" placeholder="ユーザー名を入力してください。"></textarea>
+            <br><br>
+            <a>パスワード</a>
+            	<input type="password" class="textlines" placeholder="パスワードを入力してください。"></textarea>
+            <br><br>
+            <a>パスワード(確認)</a>
+            	<input type="password" class="textlines" placeholder="パスワードを再入力してください。"></textarea>
+            <br><br>
+            <a>利用規約</a>
+            <br>
+            <div class="terms" >
+                <p>ここに利用規約を表示</p>
+            </div>
+                <div style="text-align: center;">
+                    <label >
+                        <input type="checkbox" name="agree" value="" required>利用規約に同意します
+                    </label>
+                    <br><br>
+                    <label>
+                        <input class="btn1" type="button" value="ユーザー登録">
+                    </label>
+                </div>
+			</div>
+            
+        </div>
+        
+    </body>
+
+</html>
